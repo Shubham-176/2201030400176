@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtWork</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            border: 1px solid rgb(162, 160, 160);
+        }
+
+        .imgSize {
+            padding: 8px;
+            border-right: 1px solid black;
+        }
+
+        .navClass {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .buttonClass {
+            display: flex;
+            padding: 10px;
+        }
+
+        .li {
+            padding: 8px;
+        }
+
+        .mainDiv {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-weight: 800;
+        }
+
+        .label {
+            background-color: rgb(12, 170, 222);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .mainInput {
+            padding: 10px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            background-color: rgb(237, 230, 230);
+        }
+
+        .container1 input {
+            border: 1px solid rgb(182, 181, 181);
+            padding: 15px;
+            width: 600px;
+            border-radius: 50px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .container1 svg {
+            height: 20px;
+            color: rgb(145, 142, 142);
+            position: absolute;
+            top: 48%;
+            right: 30%;
+        }
+
+        .container2 {
+            background-color: rgb(230, 219, 219);
+            margin: 10px;
+            border: 1px solid gray;
+            ;
+            border-radius: 50px;
+            padding: 10px 20px 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .input1 {}
+
+        .con {
+            display: flex;
+            position: relative;
+            padding: 6px;
+            border: 1px solid rgb(172, 169, 169);
+            width: 25%;
+            background-color: white;
+            justify-content: space-between;
+            color: gray;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .icon {
+            width: 20%;
+            background-color: white;
+            border-left: 1px solid gray;
+            padding: 0px 5px 0px 5px;
+        }
+
+        svg {
+            color: gray;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .con1 {
+            display: flex;
+            margin: 5px;
+        }
+
+        .col2 h1 {
+            color: gray;
+            border-top: 2px solid rgb(184, 183, 183);
+            border-bottom: 2px solid rgb(184, 183, 183);
+            padding: 10px;
+        }
+
+        .container3 {
+            padding: 20px;
+        }
+
+        .container4 {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col4 h1 {
+            font-size: 40px;
+            margin: auto;
+            width: 20%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .col4 p {
+            font-size: 20px;
+            margin: auto;
+            width: 60%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .imgDiv {
+            background-color: white;
+            margin: 5px;
+            padding: 10px;
+            color: black;
+        }
+
+        .imgDiv2 {
+           
+            top: 30%;
+            left: 30%;
+            margin: 5px;
+            display: flex;
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+
+        .imgDiv2 img {
+            border-radius: 50%;
+            height: 50px;
+        }
+        .imgDiv2 h3{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="">
+            <div class="">
+                <div class="mainDiv">
+                    <div class="imgSize">
+                        <a href="./vrHomePage.html">
+                        <img src="./images/logo.png" class="" loading="lazy" height="100%" width="100%"
+                            alt="vr-all-art-logo-small" title="vr-all-art-logo-small">
+                        </a>
+                    </div>
+                    <nav>
+                        <div class="navClass">
+                            <div class="li">
+                                <a class="" href="./vrExibition.html">
+                                    <span>VR Exhibitions</span>
+                                </a>
+                            </div>
+                            <div class="li">
+                                <a class="" href="./vrArtits.html">
+                                    <span>VR Artists</span>
+                                </a>
+                            </div>
+                            <div class="li" style="border-bottom :2px solid black">
+                                <a class="" href="./vrArtwork.html">
+                                    <span>VR Artworks</span>
+                                </a>
+                            </div>
+                            <div class="li">
+                                <a class="" href="./exhibitionspace.html">
+                                    <span>Exhibition spaces</span>
+                                </a>
+                            </div>
+                            <div class="li">
+                                <a class="" href="./aboutus.html">
+                                    <span>About us</span>
+                                </a>
+                            </div>
+                            <div class="li">
+                                <a class="" href="./contactus.html">
+                                    <span>Contact us</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </nav>
+                    <div class="buttonClass">
+                        <div class="li">
+                            <a class="" href="">
+                                <label class="label">
+                                    EXPLORE
+                                </label>
+                            </a>
+                        </div>
+                        <div class="li">
+                            <a class="" href="">
+                                <label class="label">
+                                    CREATE
+                                </label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container ">
+            <div class="col4">
+                <h1>VR Artworks</h1>
+                <p>Search our database and discover artworks presented in virtual exhibitions by artists from around the
+                    globe. You, as well, can exhibit artworks in VR and showcase them to a worldwide audience</p>
+            </div>
+            <div class="mainInput">
+                <div class="container1">
+                    <input type="search" class="form-input__FormInputs_30TDH " name="text" id="text" aria-label="text"
+                        placeholder="SERCH BY TITTLE" value="">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="con1">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p>only art work sale</p>
+                </div>
+                <div class="con">
+                    <div class="input1">
+                        select Contry ...
+                    </div>
+                    <div aria-hidden="true" class=" icon">
+                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"
+                            class="css-19bqh2r">
+                            <path
+                                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="con">
+                    <div class="input1">
+                        select are type ...
+                    </div>
+                    <div aria-hidden="true" class=" icon">
+                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"
+                            class="css-19bqh2r">
+                            <path
+                                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="con">
+                    <div class="input1">
+                        select are categori ...
+                    </div>
+                    <div aria-hidden="true" class=" icon">
+                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"
+                            class="css-19bqh2r">
+                            <path
+                                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container3">
+                <div class="col2">
+                    <h1>Featured Artworks</h1>
+                </div>
+            </div>
+            <div class="container4">
+                <div class="imgDiv">
+                    <div class="imgDiv1">
+                        <img src="./images/art3.jpg" alt="" height="250px" width="230px">
+                    </div>
+                    <div class="imgDiv2">
+                        <img src="./images/art2.jpg" alt="" height="">
+                        <h3>Vincent van Gogh</h3>
+                    </div>
+                    <div>
+                        <p>Shoes</p>
+                        <p>oil on canvas</p>
+                        <p>55.2 x 45.7cm</p>
+                        <button style="border: none; padding: 10px; background-color: rgb(234, 230, 230); width: 90%;">NOT FOR SALE</button>
+                    </div>
+                </div>
+                <div class="imgDiv">
+                    <div class="imgDiv1">
+                        <img src="./images/art3.jpg" alt="" height="250px" width="230px">
+                    </div>
+                    <div class="imgDiv2">
+                        <img src="./images/art2.jpg" alt="" height="">
+                        <h3>Vincent van Gogh</h3>
+                    </div>
+                    <div>
+                        <p>Shoes</p>
+                        <p>oil on canvas</p>
+                        <p>55.2 x 45.7cm</p>
+                        <button style="border: none; padding: 10px; background-color: rgb(234, 230, 230); width: 90%;">NOT FOR SALE</button>
+                    </div>
+                </div>
+                <div class="imgDiv">
+                    <div class="imgDiv1">
+                        <img src="./images/art3.jpg" alt="" height="250px" width="230px">
+                    </div>
+                    <div class="imgDiv2">
+                        <img src="./images/art2.jpg" alt="" height="">
+                        <h3>Vincent van Gogh</h3>
+                    </div>
+                    <div>
+                        <p>Shoes</p>
+                        <p>oil on canvas</p>
+                        <p>55.2 x 45.7cm</p>
+                        <button style="border: none; padding: 10px; background-color: rgb(234, 230, 230); width: 90%;">NOT FOR SALE</button>
+                    </div>
+                </div>
+                <div class="imgDiv">
+                    <div class="imgDiv1">
+                        <img src="./images/art3.jpg" alt="" height="250px" width="230px">
+                    </div>
+                    <div class="imgDiv2">
+                        <img src="./images/art2.jpg" alt="" height="">
+                        <h3>Vincent van Gogh</h3>
+                    </div>
+                    <div>
+                        <p>Shoes</p>
+                        <p>oil on canvas</p>
+                        <p>55.2 x 45.7cm</p>
+                        <button style="border: none; padding: 10px; background-color: rgb(234, 230, 230); width: 90%;">NOT FOR SALE</button>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

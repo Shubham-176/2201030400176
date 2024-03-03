@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            border: 1px solid rgb(162, 160, 160);
+        }
+
+        .imgSize {
+            padding: 8px;
+            border-right: 1px solid black;
+        }
+
+        .navClass {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .buttonClass {
+            display: flex;
+            padding: 10px;
+        }
+
+        .li {
+            padding: 8px;
+        }
+
+        .mainDiv {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-weight: 800;
+        }
+
+        label {
+            background-color: rgb(12, 170, 222);
+            color: white;
+            padding: 10px;
+            border-radius: 50px;
+        }
+        .label {
+            background-color: rgb(12, 170, 222);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .container {
+            background-image: url("./images/backgroungimage.jpg");
+        }
+
+        .container1 {
+            padding: 10px;
+
+        }
+
+        h1 {
+            margin: auto;
+            background-color: white;
+            width: 35%;
+            text-align: center;
+            font-size: 40px;
+            margin-top: 30px;
+        }
+
+        h2 {
+            margin: auto;
+            background-color: rgb(18, 17, 17);
+            color: white;
+            width: 35%;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .container2 {
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-evenly;
+            width: 35%;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 50px;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;    
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        .container3{
+            display: flex;
+        }
+        .container4{
+            padding: 40px 0px 10px 70px;
+        }
+        .container5{
+            margin: auto;
+            padding: 10px;
+        }
+        li{
+            list-style: none;
+            display: flex;
+            padding: 10px;
+            margin: 10px;
+        }
+        li img{
+            height: 20px;
+            width:20px;
+            
+        }
+        li p {
+            padding: 0px 15px 0px 15px;
+            font-size: 20px;
+        }
+        .container5 p{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .container5 button{
+            color: white;
+            background-color: rgb(11, 123, 183);
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            border: none;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="">
+            <div class="">
+                <div class="mainDiv">
+                    <div class="imgSize">
+                        <a href="./vrHomePage.html">
+                        <img src="./images/logo.png" class="" loading="lazy" height="100%" width="100%"
+                            alt="vr-all-art-logo-small" title="vr-all-art-logo-small">
+                        </a>
+                    </div>
+                    <nav>
+                        <div class="navClass">
+                            <div class="li">
+                                <a class="" href="./vrExibition.html">
+                                    <span>VR Exhibitions</span>
+                                </a>
+                            </div>
+                            <div class="li">
+                                <a class="" href="./vrArtits.html">
+                                    <span>VR Artists</span>
+                                </a>
+                            </div>
+                            <div class="li">
+                                <a class="" href="./vrArtwork.html">
+                                    <span>VR Artworks</span>
+                                </a>
+                            </div>
+                            <div class="li">
+                                <a class="" href="./exhibitionspace.html">
+                                    <span>Exhibition spaces</span>
+                                </a>
+                            </div>
+                            <div class="li">
+                                <a class="" href="./aboutus.html">
+                                    <span>About us</span>
+                                </a>
+                            </div>
+                            <div class="li">
+                                <a class="" href="./contactus.html">
+                                    <span>Contact us</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </nav>
+                    <div class="buttonClass">
+                        <div class="li">
+                            <a class="" href="">
+                                <label class="label">
+                                    EXPLORE
+                                </label>
+                            </a>
+                        </div>
+                        <div class="li">
+                            <a class="" href="">
+                                <label class="label">
+                                    CREATE
+                                </label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container ">
+            <div class="container1">
+                <h1>VR ART PLATFORM</h1>
+                <h2>Explore and create VR art exhibitions</h1>
+            </div>
+            <div class="container2">
+                <span>Explore</span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <span style="font-size: 30px;">CREATE</span>
+            </div>
+            <div class="container3">
+                <div class="container4">
+                    <p style="font-size: 20px; font-weight: 700;">VR-All-Art is a platform that gives you freedom to easily create exhibitions in Virtual Reality, and sell artworks without the limitation of time, space and geography.</p>
+                    <div class="para">
+                        <ul>
+                            <li><img src="./images/icon1.svg" alt=""><p>Plan and set up your exhibition digitally</p></li>
+                            <li><img src="./images/icon1.svg" alt=""><p>Plan and set up your exhibition digitally</p></li>
+                            <li><img src="./images/icon1.svg" alt=""><p>Plan and set up your exhibition digitally</p></li>
+                            <li><img src="./images/icon1.svg" alt=""><p>Plan and set up your exhibition digitally</p></li>
+                            <li><img src="./images/icon1.svg" alt=""><p>Plan and set up your exhibition digitally</p></li>
+                            <li><img src="./images/icon1.svg" alt=""><p>Plan and set up your exhibition digitally</p></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="container5">
+                    <p>Watch video to see VR-All-Art in action</p>
+                    <img src="./images/video1.jpg" alt="">
+                    <button>CREATE A VR EXHIBITION</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
